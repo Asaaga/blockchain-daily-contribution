@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Admin</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+    />
+    <!-- https://fonts.google.com/specimen/Roboto -->
+    <link rel="stylesheet" href="/css/fontawesome.min.css" />
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="/css/templatemo-style.css" />
+    <link rel="stylesheet" href="/css/id.css" />
+
+    <!--
+	Product Admin CSS Template
+	https://templatemo.com/tm-524-product-admin
+	-->
+  </head>
+
+  <body id="reportsPage">
+    <div class="" id="home">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container h-100">
+          <button
+            class="navbar-toggler ml-auto mr-0"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars tm-nav-icon"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto h-100">
+              <li class="nav-item">
+                <img src="/images/chain.png" style="width: 500px; height: 180px;" />
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+<div class="container tm-mt-big tm-mb-big">
+  <div class="row">
+    <div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 mx-auto">
+      <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+          <p class="text-white"><marquee behavior="" direction="left">Welcome to our BlockChain daily contribution app => Register to proceed</marquee></p>
+        <div class="row">
+          <div class="col-12">
+            <h2 class="tm-block-title d-inline-block text-center w-100">REGISTER <span class="text-warning">HERE!!!</span></h2>
+          </div>
+        </div>
+        <div class="row tm-edit-product-row">
+            <div class="col-xl-6 col-lg-6 col-md-12">
+              <form action="/register" class="tm-edit-product-form" method="POST" enctype="multipart/form-data">
+                <div class="form-group mb-3">
+                  <label
+                    for="name"
+                    >First Name
+                  </label>
+                  <input
+                    id="name"
+                    name="fname"
+                    type="text"
+                    class="form-control validate"
+                    required
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label
+                    for="name"
+                    >Second Name
+                  </label>
+                  <input
+                    id="name"
+                    name="sname"
+                    type="text"
+                    class="form-control validate"
+                    required
+                  />
+                </div>
+                <div class="form-group mb-3">
+                    <label
+                      for="name"
+                      >Middle Name
+                    </label>
+                    <input
+                      id="name"
+                      name="mname"
+                      type="text"
+                      class="form-control validate"
+                      required
+                    />
+                </div>
+                <div class="form-group mb-3">
+                  <label
+                    for="name"
+                    >Occupation
+                  </label>
+                  <input
+                    id="name"
+                    name="occupation"
+                    type="text"
+                    class="form-control validate"
+                    required
+                  />
+              </div>
+              <div class="form-group mb-3">
+                <label
+                  for="name"
+                  >Next Of Kin
+                </label>
+                <input
+                  id="name"
+                  name="nextOfKin"
+                  type="text"
+                  class="form-control validate"
+                  required
+                />
+            </div>
+            <div class="form-group mb-3">
+              <label
+                for="name"
+                >Email
+              </label>
+              <input
+                id="name"
+                name="email"
+                type="email"
+                class="form-control validate"
+                required
+              />
+          </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mt-5">
+              <div class="tm-product-img-dummy mx-auto" style="height: 200px !important;">
+                <i
+                  class="fas fa-cloud-upload-alt tm-upload-icon"
+                  onclick="document.getElementById('fileInput').click();"
+                ></i>
+              </div>
+              <div class="custom-file mt-3 mb-3">
+                <input id="fileInput" type="file" name="image" style="display:none;" />
+                <input
+                  type="button"
+                  class="btn btn-primary btn-block mx-auto"
+                  value="UPLOAD STUDENT IMAGE"
+                  onclick="document.getElementById('fileInput').click();"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label
+                  for="name"
+                  >Address
+                </label>
+                <textarea class="form-control" name="address" id="" cols="30" rows="4"></textarea>
+            </div>
+            <div class="form-group mb-3">
+              <label
+                for="name"
+                >Password
+              </label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                class="form-control validate"
+                required
+              />
+          </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary btn-block text-uppercase">Register</button>
+            </div>
+          </form>
+          </div>
+          <p class="text-primary">
+            already have account? <a href="/signin">Login</a>
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('includes/footer.ejs') %>
